@@ -1,0 +1,18 @@
+P1:
+In @templates/base.html, add footer links for Terms & Conditions and Privacy Policy Only. 
+Modify the footer section. Links should point to "#" as placeholder hrefs since the page don't exists yet.
+Do not modify anything else on the page.
+
+P2:
+ @templates/base.html we have added 2 links: <a href="{{ url_for('terms') }}">Terms &amp; Conditions</a>
+                  <a href="#">Privacy Policy</a> there is no space or new line charector added in those texts. I want you to write this text as "Terms & Conditions" | "Privacy Policy"
+  basicaly I want to add a seprator in both links like " | "
+
+P3:
+git commit -m "landing: add terms and privacy links to footer"
+
+P4:
+Create a "Terms and Conditions" page for Spendly.
+1. Add a new route in [@app.py](http://app.py/): GET /terms > renders template/terms.html
+2. Create template/terms.html with generic terms and conditions content appropriate for a personal expense tracking app. Include sections like: Acceptance of Terms, Use of Services, User Data, Limitations of Liability, and Changes to Terms. Extend base.html if it exists, otherwise match the style of landing.html
+3. In @templates/landing.html, update the "Terms and Conditions" footer link href from "#" to "/terms".
